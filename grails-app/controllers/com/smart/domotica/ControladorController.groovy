@@ -96,4 +96,8 @@ class ControladorController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def verga(){
+        println "Verga"
+    }
 }
