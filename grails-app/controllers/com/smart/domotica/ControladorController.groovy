@@ -100,4 +100,8 @@ class ControladorController {
     def verga(){
         println "Verga"
     }
+
+    def publicar(String puto){
+        println "Verga ${puto}"
+    }
 }
