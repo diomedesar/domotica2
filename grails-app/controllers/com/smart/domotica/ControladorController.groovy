@@ -1,6 +1,7 @@
 package com.smart.domotica
 
 import grails.validation.ValidationException
+import grails.converters.JSON
 import static org.springframework.http.HttpStatus.*
 
 class ControladorController {
@@ -102,6 +103,7 @@ class ControladorController {
     }
 
     def publicar(String puto){
-        println "Verga ${puto}"
+        def variable = new JSON(puto)
+        println variable
     }
 }
